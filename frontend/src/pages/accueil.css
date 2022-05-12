@@ -1,6 +1,6 @@
 .logo-site {
-  width: 450px;
-  height: 450px;
+  width: 250px;
+  height: 250px;
 }
 .logo-inscription {
   display: flex;
@@ -8,12 +8,14 @@
   justify-content: space-around;
   align-items: center;
   background-color: rgb(231, 87, 99);
-  height: 80vw;
+  height: 53rem;
 }
 .inscription {
-  width: 20rem;
+  width: 10rem;
   height: 5rem;
-  font-size: 4rem;
+  font-size: 2rem;
 border-radius: 1rem;
-
+}
+.App {
+  height: 100vw;
 }
