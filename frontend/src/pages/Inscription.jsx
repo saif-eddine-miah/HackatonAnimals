@@ -17,13 +17,23 @@ function Inscription() {
         />
       </div>
       <div className="Inscription__age">
-        <p>Comment age avez vous ?</p>
+        <p>Quel age avez vous ?</p>
         <input
           type="number"
           className="Inscription__age__input"
           step="1"
           min="0"
           max="20"
+        />
+      </div>
+      <div className="Inscription__Profession">
+        <p>Quelle est votre profession ?</p>
+        <input
+          type="text"
+          className="Inscription__Profession__input"
+          placeholder="Préparateur de commande"
+          size="30"
+          required
         />
       </div>
       <div className="Inscription__bio">
