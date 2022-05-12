@@ -12,9 +12,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Accueil />} />
-          <Route path="/users" element={<Swipe />} />
-          <Route path="/users" element={<Match />} />
-          <Route path="/users" element={<Tchat />} />
+          <Route path="/swipe" element={<Swipe />} />
+          <Route path="/match" element={<Match />} />
+          <Route path="/tchat" element={<Tchat />} />
         </Routes>
       </div>
     </Router>
