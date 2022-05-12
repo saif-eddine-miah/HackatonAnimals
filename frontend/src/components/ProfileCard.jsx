@@ -5,7 +5,7 @@ function ProfileCard(props) {
   return (
     <div>
       <div>
-        <img src="src/assets/animals/cheval.jpg" alt="cheval" />
+        <img src={`src/assets/animals/${type}.jpg`} alt="cheval" />
       </div>
       <div>{name}</div>
       <div> {age}</div>
