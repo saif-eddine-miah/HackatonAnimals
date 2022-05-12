@@ -4,10 +4,7 @@ function ProfileCard() {
   return (
     <div>
       <div>
-        <img
-          src="src/assets/animals/chat-hibou.jpg"
-          alt="croisement chat-hibou"
-        />
+        <img src="src/assets/animals/cheval.jpg" alt="cheval" />
       </div>
       <div>Nom, Age</div>
       <div>

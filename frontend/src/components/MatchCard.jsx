@@ -4,12 +4,15 @@ function MatchCard() {
   return (
     <div>
       <div>
-        <img
-          src="src/assets/animals/chat-hibou.jpg"
-          alt="croisement chat-hibou"
-        />
+        <div>
+          <img src="src/assets/animals/cheval.jpg" alt="cheval" />
+          <div>Nom</div>
+        </div>
+        <div>
+          <img src="src/assets/animals/chien.png" alt="chien" />
+          <div>Nom</div>
+        </div>
       </div>
-      <div>Nom</div>
       <div>
         <button type="button">
           <img src="src/assets/icons/tchat.png" alt="tchat" />
