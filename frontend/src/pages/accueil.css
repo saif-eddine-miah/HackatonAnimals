@@ -1,0 +1,19 @@
+.logo-site {
+  width: 450px;
+  height: 450px;
+}
+.logo-inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(231, 87, 99);
+  height: 80vw;
+}
+.inscription {
+  width: 20rem;
+  height: 5rem;
+  font-size: 4rem;
+border-radius: 1rem;
+
+}
