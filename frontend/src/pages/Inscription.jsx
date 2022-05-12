@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProfileIcon from "../components/ProfileIcon";
 
 function Inscription() {
@@ -35,9 +36,11 @@ function Inscription() {
           required
         />
       </div>
-      <button type="button" className="Inscription__finish">
-        Terminer
-      </button>
+      <Link to="/swipe">
+        <button type="button" className="Inscription__finish">
+          Terminer
+        </button>
+      </Link>
     </div>
   );
 }
