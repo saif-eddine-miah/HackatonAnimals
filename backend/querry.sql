@@ -1,1 +1,0 @@
-INSERT INTO animal (animal_name, animal_bio, animal_profession, animal_age, animal_isreal, animal_match, animal_type) VALUES ('Tom', 'Je suis doux comme du miel', 'coursier', 0, 5, false, false, 'chat');
