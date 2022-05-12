@@ -4,7 +4,6 @@ import ProfileCard from "../components/ProfileCard";
 function Swipe() {
   return (
     <div>
-      Swipe
       <ProfileCard />;
     </div>
   );
