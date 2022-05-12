@@ -1,33 +1,27 @@
 import React from "react";
 
-function ProfileCard() {
+function ProfileCard(props) {
+  const { name, age, type, profession, biography } = props;
   return (
     <div>
       <div>
         <img src="src/assets/animals/cheval.jpg" alt="cheval" />
       </div>
-      <div>Nom, Age</div>
+      <div>{name}</div>
+      <div> {age}</div>
       <div>
         <div>
           <img src="src/assets/icons/paw.png" alt="empreinte" />
-          Race
+          {type}
         </div>
         <div>
           <img src="src/assets/icons/briefcase.png" alt="malette" />
-          Profession
+          {profession}
         </div>
         <div>
           <img src="src/assets/icons/book.png" alt="livre" />
-          Biographie
+          {biography}
         </div>
-      </div>
-      <div>
-        <button type="button">
-          <img src="src/assets/icons/cross.png" alt="croix" />
-        </button>
-        <button type="button">
-          <img src="src/assets/icons/heart.png" alt="coeur" />
-        </button>
       </div>
     </div>
   );

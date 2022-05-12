@@ -10,9 +10,23 @@ function Swipe() {
   }, []);
 
   const animal = animals[0];
+  console.log(animal);
   return (
     <div>
-      <ProfileCard name={animal.animalName} />;
+      <ProfileCard
+        name={animal.animalName}
+        age={animal.animalAge}
+        type={animal.animalType}
+        profession={animal.animalProfession}
+        biography={animal.animalBio}
+      />
+      ;
+      <button type="button">
+        <img src="src/assets/icons/cross.png" alt="croix" />
+      </button>
+      <button type="button">
+        <img src="src/assets/icons/heart.png" alt="coeur" />
+      </button>
     </div>
   );
 }
