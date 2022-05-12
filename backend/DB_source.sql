@@ -1,6 +1,3 @@
-/* Ouvrir mysql logué avec votre USERNAME puis copier-coller : */
-
-
 CREATE DATABASE  IF NOT EXISTS `breeder_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `breeder_db`;
 -- MySQL dump 10.13  Distrib 8.0.29, for Linux (x86_64)
@@ -28,16 +25,16 @@ DROP TABLE IF EXISTS `animal`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `animal` (
-  `animal_id` int NOT NULL AUTO_INCREMENT,
-  `animal_name` varchar(255) NOT NULL DEFAULT 'default_user',
-  `animal_bio` varchar(255) DEFAULT NULL,
-  `animal_profession` varchar(255) DEFAULT NULL,
-  `animal_age` int NOT NULL DEFAULT '0',
-  `animal_isreal` tinyint NOT NULL DEFAULT '0',
-  `animal_match` tinyint NOT NULL DEFAULT '0',
-  `animal_type` varchar(255) NOT NULL DEFAULT 'dog',
-  PRIMARY KEY (`animal_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `animalId` int NOT NULL AUTO_INCREMENT,
+  `animalName` varchar(255) NOT NULL DEFAULT 'default_user',
+  `animalBio` varchar(255) DEFAULT NULL,
+  `animalProfession` varchar(255) DEFAULT NULL,
+  `animalAge` int NOT NULL DEFAULT '0',
+  `animalIsreal` tinyint NOT NULL DEFAULT '1',
+  `animalMatch` tinyint NOT NULL DEFAULT '0',
+  `animalType` varchar(255) NOT NULL DEFAULT 'dog',
+  PRIMARY KEY (`animalId`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -59,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-12 15:54:13
+-- Dump completed on 2022-05-12 17:40:12
