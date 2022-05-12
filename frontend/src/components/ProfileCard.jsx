@@ -23,15 +23,12 @@ function ProfileCard() {
           <img src="src/assets/icons/book.png" alt="livre" />
           Biographie
         </div>
-        {/* <div>id</div>
-        <div>isReal</div>
-        <div>matchDefault</div> */}
       </div>
       <div>
-        <button>
+        <button type="button">
           <img src="src/assets/icons/cross.png" alt="croix" />
         </button>
-        <button>
+        <button type="button">
           <img src="src/assets/icons/heart.png" alt="coeur" />
         </button>
       </div>

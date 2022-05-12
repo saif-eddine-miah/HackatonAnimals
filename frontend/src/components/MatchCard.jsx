@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProfileCard() {
+function MatchCard() {
   return (
     <div>
       <div>
@@ -9,34 +9,17 @@ function ProfileCard() {
           alt="croisement chat-hibou"
         />
       </div>
-      <div>Nom, Age</div>
+      <div>Nom</div>
       <div>
-        <div>
-          <img src="src/assets/icons/paw.png" alt="empreinte" />
-          Race
-        </div>
-        <div>
-          <img src="src/assets/icons/briefcase.png" alt="malette" />
-          Profession
-        </div>
-        <div>
-          <img src="src/assets/icons/book.png" alt="livre" />
-          Biographie
-        </div>
-        {/* <div>id</div>
-        <div>isReal</div>
-        <div>matchDefault</div> */}
-      </div>
-      <div>
-        <button>
-          <img src="src/assets/icons/cross.png" alt="croix" />
+        <button type="button">
+          <img src="src/assets/icons/tchat.png" alt="tchat" />
         </button>
-        <button>
-          <img src="src/assets/icons/heart.png" alt="coeur" />
+        <button type="button">
+          <img src="src/assets/icons/couple.png" alt="couple" />
         </button>
       </div>
     </div>
   );
 }
 
-export default ProfileCard;
+export default MatchCard;
