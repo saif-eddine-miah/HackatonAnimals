@@ -1,0 +1,21 @@
+.logo-site {
+  width: 250px;
+  height: 250px;
+}
+.logo-inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(231, 87, 99);
+  height: 53rem;
+}
+.inscription {
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+border-radius: 1rem;
+}
+.App {
+  height: 100vw;
+}
