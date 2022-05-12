@@ -36,13 +36,13 @@ function Inscription() {
           onChange={handleChange}
         >
           <option value="">-choose a type-</option>
-          <option value="Chat">chat</option>
-          <option value="Chien">chien</option>
-          <option value="Requin">requin</option>
-          <option value="Oiseau">oiseau</option>
-          <option value="Pingouin">pingouin</option>
-          <option value="Lapin">lapin</option>
-          <option value="Hibou">hibou</option>
+          <option value="chat">chat</option>
+          <option value="chien">chien</option>
+          <option value="requin">requin</option>
+          <option value="oiseau">oiseau</option>
+          <option value="pingouin">pingouin</option>
+          <option value="lapin">lapin</option>
+          <option value="hibou">hibou</option>
         </select>
         <div className="Inscription__name">
           <p>Comment vous appelez vous ?</p>
