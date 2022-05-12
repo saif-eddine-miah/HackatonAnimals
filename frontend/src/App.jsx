@@ -1,13 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Accueil from "./pages/Accueil";
+import Match from "./pages/Match";
+import Tchat from "./pages/Tchat";
 import "./App.css";
-import MatchCard from "./components/MatchCard";
-import ProfileCard from "./components/ProfileCard";
+import Swipe from "./pages/Swipe";
 
 function App() {
   return (
-    <div className="App">
-      <ProfileCard />
-      <MatchCard />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Accueil />} />
+          <Route path="/swipe" element={<Swipe />} />
+          <Route path="/match" element={<Match />} />
+          <Route path="/tchat" element={<Tchat />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
