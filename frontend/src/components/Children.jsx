@@ -1,11 +1,10 @@
 import React from "react";
+import "./MatchCard.css";
 
-function Children() {
-  return (
-    <div>
-      <img src="src/assets/animals/chien-cheval.jpg" alt="chien-cheval" />
-    </div>
-  );
+function Children({ user, animalmatch }) {
+  const userType = user;
+  const animalType = animalmatch;
+  return <div className={`animalChild ${userType}${animalType}`} />;
 }
 
 export default Children;
