@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
 import ProfileIcon from "../components/ProfileIcon";
 
@@ -12,18 +12,23 @@ function Inscription() {
     animalAge: 0,
     animalType: "",
   });
+  const [newId, setNewId] = useState("0");
 
+  const navigate = useNavigate();
   function submit(event) {
     event.preventDefault();
     Axios.post(url, { ...form }).then((response) => {
-      console.log(response);
+      setNewId(response.data.id);
     });
   }
+  useEffect(() => {
+    if (newId !== "0") navigate(`/swipe/${newId}`);
+  }, [newId]);
 
   const handleChange = (event) => {
     setForm({ ...form, [event.target.id]: event.target.value });
   };
-  console.log(form);
+  console.log(newId);
 
   return (
     <div className="Inscription">
@@ -36,13 +41,13 @@ function Inscription() {
           onChange={handleChange}
         >
           <option value="">-choose a type-</option>
-          <option value="Chat">chat</option>
-          <option value="Chien">chien</option>
-          <option value="Requin">requin</option>
-          <option value="Oiseau">oiseau</option>
-          <option value="Pingouin">pingouin</option>
-          <option value="Lapin">lapin</option>
-          <option value="Hibou">hibou</option>
+          <option value="chat">chat</option>
+          <option value="chien">chien</option>
+          <option value="requin">requin</option>
+          <option value="oiseau">oiseau</option>
+          <option value="pingouin">pingouin</option>
+          <option value="lapin">lapin</option>
+          <option value="hibou">hibou</option>
         </select>
         <div className="Inscription__name">
           <p>Comment vous appelez vous ?</p>
@@ -97,7 +102,7 @@ function Inscription() {
           />
         </div>
 
-        <Link to="/swipe">
+        <Link to={`/swipe/${newId}`}>
           <button
             type="button"
             className="Inscription__finish"
