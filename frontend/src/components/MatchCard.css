@@ -1,0 +1,62 @@
+.body {
+  margin: 1rem;
+  margin-bottom: 1rem;
+}
+
+.previousBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: white;
+  border: transparent;
+  box-shadow: 0px 0px 10px 1px;
+  font-size: 1rem;
+}
+
+.arrowBtn {
+  height: 1rem;
+  width: 1rem;
+}
+
+.squareBtn {
+  text-decoration: none;
+}
+
+.matched-peoples {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.matched-peoples img {
+  width: 40vw;
+  height: 30vh;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px 1px;
+}
+
+.matched-people {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.divBtns {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.matchBtns {
+  background-color: transparent;
+  border: none;
+}
+
+.matchBtns img {
+  max-height: 3rem;
+  max-width: 3rem;
+}

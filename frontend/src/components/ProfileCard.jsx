@@ -1,33 +1,30 @@
 import React from "react";
+import empreinte from "../assets/icons/paw.png";
+import malette from "../assets/icons/briefcase.png";
+import livre from "../assets/icons/book.png";
+import "./ProfileCard.css";
 
-function ProfileCard() {
+function ProfileCard(props) {
+  const { name, age, type, profession, biography } = props;
+  console.log(type);
   return (
-    <div>
+    <div className="ProfileCardContainer">
+      <div className={`animalpic ${type}`}> </div>
+      <div className="swipe-name">{name}</div>
+      <div className="swipe-age"> {age}</div>
       <div>
-        <img src="src/assets/animals/cheval.jpg" alt="cheval" />
-      </div>
-      <div>Nom, Age</div>
-      <div>
-        <div>
-          <img src="src/assets/icons/paw.png" alt="empreinte" />
-          Race
+        <div className="swipe-empreinte">
+          <img src={empreinte} alt="empreinte" />
+          <p className="info-swipe">{type}</p>
         </div>
-        <div>
-          <img src="src/assets/icons/briefcase.png" alt="malette" />
-          Profession
+        <div className="swipe-profession">
+          <img src={malette} alt="malette" />
+          <p className="info-swipe">{profession}</p>
         </div>
-        <div>
-          <img src="src/assets/icons/book.png" alt="livre" />
-          Biographie
+        <div className="swipe-bio">
+          <img src={livre} alt="livre" />
+          <p className="info-swipe">{biography}</p>
         </div>
-      </div>
-      <div>
-        <button type="button">
-          <img src="src/assets/icons/cross.png" alt="croix" />
-        </button>
-        <button type="button">
-          <img src="src/assets/icons/heart.png" alt="coeur" />
-        </button>
       </div>
     </div>
   );

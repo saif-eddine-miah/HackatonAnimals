@@ -1,0 +1,64 @@
+.ProfileCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  gap: 0.2rem;
+}
+.swipe-name {
+  height: 25px;
+  font-size: 2rem;
+}
+.swipe-age {
+  height: 25px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.swipe-empreinte img {
+  height: 10vh;
+}
+.swipe-profession img {
+  height: 10vh;
+}
+.swipe-bio img {
+  height: 10vh;
+}
+.swipe-heart img {
+  height: 8vh;
+}
+.info-swipe {
+  margin: 0.2rem;
+}
+.animalpic {
+  margin-top: 0.5rem;
+  height: 200px;
+  width: 275px;
+  background-size: cover;
+  border-radius: 2rem;
+}
+.chat {
+  background-image: url("../assets/animals/chat.jpg");
+}
+.chien {
+  background-image: url("../assets/animals/chien.jpg");
+}
+.requin {
+  background-image: url("../assets/animals/requin.jpg");
+}
+.pingouin {
+  background-image: url("../assets/animals/pingouin.jpg");
+}
+.hibou {
+  background-image: url("../assets/animals/hibou.jpg");
+}
+.lapin {
+  background-image: url("../assets/animals/lapin.jpg");
+}
+
+.oiseau {
+  background-image: url("../assets/animals/oiseau.jpg");
+}
+.cheval {
+  background-image: url("../assets/animals/cheval.jpg");
+}

@@ -1,20 +1,26 @@
 .logo-site {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
+  margin: 4rem;
 }
 .logo-inscription {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 4rem;
   align-items: center;
   background-color: rgb(231, 87, 99);
-  height: 53rem;
+  height: 58rem;
 }
 .inscription {
-  width: 10rem;
+  width: 70vw;
   height: 5rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
 border-radius: 1rem;
+border: solid black;
+text-decoration: none;
 }
 .App {
   height: 100vw;

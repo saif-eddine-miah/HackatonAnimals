@@ -2,15 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Tchat from "../components/Tchat";
 import MatchCard from "../components/MatchCard";
+import "../components/MatchCard.css";
 
 function Match() {
   return (
-    <div>
+    <div className="body">
       <div>
-        <Link to="/Swipe">
-          <button type="button">
-            <img src="src/assets/icons/left-arrow.png" alt="flèche gauche" />{" "}
-            Continuer de swiper
+        <Link className="squareBtn" to="/Swipe">
+          <button className="previousBtn" type="button">
+            <img
+              className="arrowBtn"
+              src="src/assets/icons/left-arrow.png"
+              alt="flèche gauche"
+            />
+            <div>Continuer de swiper</div>
           </button>
         </Link>
       </div>

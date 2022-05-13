@@ -15,6 +15,8 @@ function App() {
           <Route path="/" element={<Accueil />} />
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/swipe" element={<Swipe />} />
+          <Route path="/swipe/:id" element={<Swipe />} />
+
           <Route path="/match" element={<Match />} />
           <Route path="/tchat" element={<Tchat />} />
         </Routes>
