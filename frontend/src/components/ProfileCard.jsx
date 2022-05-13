@@ -1,4 +1,3 @@
-/* eslint-disable no-nested-ternary */
 import React from "react";
 // import chien from "../assets/animals/chien.jpg";
 // import chat from "../assets/animals/chat.jpg";

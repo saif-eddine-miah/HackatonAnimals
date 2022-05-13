@@ -30,17 +30,21 @@ function Swipe() {
     .filter((sortedAnimal) => sortedAnimal.animalId !== id);
 
   console.log("sorted ", sortedAnimals);
-  // const animal = animals[0];
-  const animal = animalsHardCopy[1];
+  const animal = animals[0];
+  // const animal = animalsHardCopy[1];
   return (
     <div>
-      <ProfileCard
-        name={animal.animalName}
-        age={animal.animalAge}
-        type={animal.animalType}
-        profession={animal.animalProfession}
-        biography={animal.animalBio}
-      />
+      {animal ? (
+        <ProfileCard
+          name={animal.animalName}
+          age={animal.animalAge}
+          type={animal.animalType}
+          profession={animal.animalProfession}
+          biography={animal.animalBio}
+        />
+      ) : (
+        "Loading"
+      )}
 
       <button type="button">
         <img src={croix} alt="croix" />
