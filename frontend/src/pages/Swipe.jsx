@@ -1,16 +1,37 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
+import animalsHardCopy from "../components/animals";
+import croix from "../assets/icons/cross.png";
+import coeur from "../assets/icons/heart.png";
 
 function Swipe() {
+  const { id } = useParams();
+  console.log(id);
   const [animals, setAnimals] = useState([]);
+
   useEffect(() => {
     const url = "http://localhost:5000/animals";
-    axios.get(url).then((res) => setAnimals(res.data));
+    axios.get(url).then((response) => setAnimals(response.data));
   }, []);
+  console.log(animals);
 
-  const animal = animals[0];
-  console.log(animal);
+  const realAnimals = animals.filter(
+    (realAnimal) => realAnimal.animalIsreal === 1
+  );
+  console.log("real ", realAnimals);
+  const sampleAnimals = animals.filter(
+    (sampleAnimal) => sampleAnimal.animalIsreal === 0
+  );
+  console.log("sample ", sampleAnimals);
+  const sortedAnimals = realAnimals
+    .concat(sampleAnimals)
+    .filter((sortedAnimal) => sortedAnimal.animalId !== id);
+
+  console.log("sorted ", sortedAnimals);
+  // const animal = animals[0];
+  const animal = animalsHardCopy[1];
   return (
     <div>
       <ProfileCard
@@ -20,12 +41,12 @@ function Swipe() {
         profession={animal.animalProfession}
         biography={animal.animalBio}
       />
-      ;
+
       <button type="button">
-        <img src="src/assets/icons/cross.png" alt="croix" />
+        <img src={croix} alt="croix" />
       </button>
       <button type="button">
-        <img src="src/assets/icons/heart.png" alt="coeur" />
+        <img src={coeur} alt="coeur" />
       </button>
     </div>
   );
