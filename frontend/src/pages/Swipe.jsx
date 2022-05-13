@@ -8,7 +8,6 @@ import "./Swipe.css";
 
 function Swipe() {
   const { id } = useParams();
-  console.log(id);
   const [animals, setAnimals] = useState([]);
   const [match, setMatch] = useState(false);
 
@@ -29,7 +28,6 @@ function Swipe() {
     .concat(sampleAnimals)
     .filter((sortedAnimal) => sortedAnimal.animalId !== id);
 
-  console.log("sorted ", sortedAnimals);
   const navigate = useNavigate();
 
   const animal = sortedAnimals[animalNumber];
@@ -46,7 +44,7 @@ function Swipe() {
   };
 
   useEffect(() => {
-    if (match) navigate(`/match`);
+    if (match) navigate(`/match/${id}-${animal.animalId}`);
   }, [match]);
   return (
     <div className="ProfileCardContainer">

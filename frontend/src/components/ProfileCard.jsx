@@ -6,7 +6,6 @@ import "./ProfileCard.css";
 
 function ProfileCard(props) {
   const { name, age, type, profession, biography } = props;
-  console.log(type);
   return (
     <div className="ProfileCardContainer">
       <div className={`animalpic ${type}`}> </div>
