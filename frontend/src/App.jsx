@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Match from "./pages/Match";
-import Tchat from "./components/Tchat";
+import Tchat from "./pages/Tchat";
 import Inscription from "./pages/Inscription";
 import "./App.css";
 import Swipe from "./pages/Swipe";
