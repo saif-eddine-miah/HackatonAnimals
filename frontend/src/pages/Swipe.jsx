@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 import croix from "../assets/icons/cross.png";
 import coeur from "../assets/icons/heart.png";
+import "./Swipe.css";
 
 function Swipe() {
   const { id } = useParams();
@@ -31,7 +32,7 @@ function Swipe() {
   console.log("sorted ", sortedAnimals);
   const animal = animals[2];
   return (
-    <div>
+    <div className="ProfileCardContainer">
       {animal ? (
         <ProfileCard
           name={animal.animalName}
@@ -43,13 +44,14 @@ function Swipe() {
       ) : (
         "Loading"
       )}
-
-      <button type="button">
-        <img src={croix} alt="croix" />
-      </button>
-      <button type="button">
-        <img src={coeur} alt="coeur" />
-      </button>
+      <div className="cross-heart">
+        <button className="swipe-cross" type="button">
+          <img src={croix} alt="croix" />
+        </button>
+        <button className="swipe-heart" type="button">
+          <img src={coeur} alt="coeur" />
+        </button>
+      </div>
     </div>
   );
 }

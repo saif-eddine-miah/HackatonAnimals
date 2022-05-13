@@ -20,39 +20,52 @@ function ProfileIcon() {
     <Swiper navigation modules={[Navigation]} className="mySwiper">
       <SwiperSlide>
         <img
+          className="photo_carrousel"
           src="https://img.icons8.com/color/96/000000/cat--v1.png"
           alt="chat"
         />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://img.icons8.com/color/96/000000/dog.png" alt="Chien" />
+        <img
+          className="photo_carrousel"
+          src="https://img.icons8.com/color/96/000000/dog.png"
+          alt="Chien"
+        />
       </SwiperSlide>
       <SwiperSlide>
         <img
+          className="photo_carrousel"
           src="https://img.icons8.com/color/96/000000/aggressive-shark.png"
           alt="Requin"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
+          className="photo_carrousel"
           src="https://img.icons8.com/color/96/000000/bird.png"
           alt="Oiseau"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
+          className="photo_carrousel"
           src="https://img.icons8.com/color/96/000000/pinguin.png"
           alt="Pingouin"
         />
       </SwiperSlide>
       <SwiperSlide>
         <img
+          className="photo_carrousel"
           src="https://img.icons8.com/color/96/000000/rabbit.png"
           alt="Lapin"
         />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://img.icons8.com/color/96/000000/owl.png" alt="Hibou" />
+        <img
+          className="photo_carrousel"
+          src="https://img.icons8.com/color/96/000000/owl.png"
+          alt="Hibou"
+        />
       </SwiperSlide>
     </Swiper>
   );
