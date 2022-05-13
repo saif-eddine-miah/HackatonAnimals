@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import TinderCard from "react-tinder-card";
 import ProfileCard from "../components/ProfileCard";
 import croix from "../assets/icons/cross.png";
 import coeur from "../assets/icons/heart.png";
@@ -30,20 +31,32 @@ function Swipe() {
 
   console.log("sorted ", sortedAnimals);
   const animal = animals[2];
+
+  const onSwipe = (direction) => {
+    console.log(`You swiped: ${direction}`);
+  };
+  const onCardLeftScreen = (myIdentifier) => {
+    console.log(`${myIdentifier} left the screen`);
+  };
   return (
     <div>
-      {animal ? (
-        <ProfileCard
-          name={animal.animalName}
-          age={animal.animalAge}
-          type={animal.animalType}
-          profession={animal.animalProfession}
-          biography={animal.animalBio}
-        />
-      ) : (
-        "Loading"
-      )}
-
+      <TinderCard
+        onSwipe={onSwipe}
+        onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+        preventSwipe={["right", "left"]}
+      >
+        {animal ? (
+          <ProfileCard
+            name={animal.animalName}
+            age={animal.animalAge}
+            type={animal.animalType}
+            profession={animal.animalProfession}
+            biography={animal.animalBio}
+          />
+        ) : (
+          "Loading"
+        )}
+      </TinderCard>
       <button type="button">
         <img src={croix} alt="croix" />
       </button>
