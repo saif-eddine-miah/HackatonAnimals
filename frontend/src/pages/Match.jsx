@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Tchat from "../components/Tchat";
 import MatchCard from "../components/MatchCard";
 
 function Match() {
@@ -15,6 +16,7 @@ function Match() {
       </div>
       <h1>It&apos;s a match !</h1>
       <MatchCard />
+      <Tchat />
     </div>
   );
 }
