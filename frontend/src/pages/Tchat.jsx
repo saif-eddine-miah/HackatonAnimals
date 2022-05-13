@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
+import "./Tchat.css";
 
 function Tchat() {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const [response, setResponse] = useState("...");
 
@@ -24,28 +25,27 @@ function Tchat() {
       frequency_penalty: 0,
       presence_penalty: 0.6,
     });
-    setResponse([...response, myresponse.data.choices[0].text]);
-    console.log(myresponse.data.choices[0]);
+    setResponse(myresponse.data.choices[0].text);
+    console.log(myresponse.data.choices[0].text);
   }
   console.log(response);
   return (
-    <div>
+    <div className="Tchat">
       <h1>Chat</h1>
-      <p>{response}</p>
+      <div className="Tchat__Bot">
+        <div>{response}</div>
+      </div>
       <form action="tchat" className="form-container" onSubmit={ask}>
-        <label htmlFor="msg">
-          <b>Message</b>
-          <textarea
-            placeholder="Type message.."
-            name="msg"
-            size="225"
-            rows="5"
-            cols="33"
-            required
-            value={question}
-            onChange={handleQuestion}
-          />
-        </label>
+        <textarea
+          placeholder="Type message.."
+          name="msg"
+          size="225"
+          rows="2"
+          cols="33"
+          required
+          value={question}
+          onChange={handleQuestion}
+        />
 
         <button type="submit" className="btn">
           Send
