@@ -1,13 +1,42 @@
 .ProfileCardContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 100vh;
+  margin-top: 0.5rem;
+  gap: 0.2rem;
+  
+}
+.swipe-name {
+  height: 25px;
+  font-size: 2rem;
+}
+.swipe-age  {
+  height: 25px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.swipe-empreinte img {
+height: 10vh;
+}
+.swipe-profession img {
+  height: 10vh;
+}
+.swipe-bio img {
+  height: 10vh;
+}
+.swipe-heart img {
+  height: 8vh;
+}
+.info-swipe {
+  margin: 0.2rem;
 }
 .animalpic {
-  height: 200px;
-  width: 30vw;
+  height: 25vh;
+  width: 50vw;
   background-size: cover;
+  border-radius: 2rem;
 }
 .chat {
   background-image: url("../assets/animals/chat.jpg");

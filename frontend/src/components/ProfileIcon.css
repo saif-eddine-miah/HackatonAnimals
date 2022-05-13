@@ -2,6 +2,12 @@
   width: 100%;
   height: 6rem;
 }
+.photo_carrousel {
+  width: cover;
+}
+.mySwiper {
+  height: 22vh;
+}
 
 .swiper-slide {
   text-align: center;

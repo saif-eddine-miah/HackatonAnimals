@@ -9,21 +9,21 @@ function ProfileCard(props) {
   console.log(type);
   return (
     <div className="ProfileCardContainer">
-      <div className={`animalpic ${type}`}> coucou</div>
-      <div>{name}</div>
-      <div> {age}</div>
+      <div className={`animalpic ${type}`}> </div>
+      <div className="swipe-name">{name}</div>
+      <div className="swipe-age"> {age}</div>
       <div>
-        <div>
+        <div className="swipe-empreinte">
           <img src={empreinte} alt="empreinte" />
-          {type}
+          <p className="info-swipe">{type}</p>
         </div>
-        <div>
+        <div className="swipe-profession">
           <img src={malette} alt="malette" />
-          {profession}
+          <p className="info-swipe">{profession}</p>
         </div>
-        <div>
+        <div className="swipe-bio">
           <img src={livre} alt="livre" />
-          {biography}
+          <p className="info-swipe">{biography}</p>
         </div>
       </div>
     </div>
