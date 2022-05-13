@@ -1,0 +1,36 @@
+.ProfileCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.animalpic {
+  height: 200px;
+  width: 30vw;
+  background-size: cover;
+}
+.chat {
+  background-image: url("../assets/animals/chat.jpg");
+}
+.chien {
+  background-image: url("../assets/animals/chien.jpg");
+}
+.requin {
+  background-image: url("../assets/animals/requin.jpg");
+}
+.pingouin {
+  background-image: url("../assets/animals/pingouin.jpg");
+}
+.hibou {
+  background-image: url("../assets/animals/hibou.jpg");
+}
+.lapin {
+  background-image: url("../assets/animals/lapin.jpg");
+}
+
+.oiseau {
+  background-image: url("../assets/animals/oiseau.jpg");
+}
+.cheval {
+  background-image: url("../assets/animals/cheval.jpg");
+}
