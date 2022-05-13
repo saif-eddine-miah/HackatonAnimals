@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Children from "./Children";
 import "./MatchCard.css";
 import "./ProfileCard.css";
@@ -23,9 +24,11 @@ function MatchCard({ user, animalmatch }) {
         </div>
       </div>
       <div className="divBtns">
-        <button className="matchBtns" type="button">
-          <img src={tchat} alt="tchat" />
-        </button>
+        <Link to="/tchat">
+          <button className="matchBtns" type="button">
+            <img src={tchat} alt="tchat" />
+          </button>
+        </Link>
         <button
           className="matchBtns"
           type="button"
