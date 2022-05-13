@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
-import animalsHardCopy from "../components/animals";
+// import animalsHardCopy from "../components/animals";
 import croix from "../assets/icons/cross.png";
 import coeur from "../assets/icons/heart.png";
 
