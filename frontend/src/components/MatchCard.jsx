@@ -1,26 +1,31 @@
 import React, { useState } from "react";
 import Children from "./Children";
+import "./MatchCard.css";
 
 function MatchCard() {
   const [showChildren, setShowChildren] = useState(false);
 
   return (
     <div>
-      <div>
-        <div>
+      <div className="matched-peoples">
+        <div className="matched-people1">
           <img src="src/assets/animals/cheval.jpg" alt="cheval" />
-          <div>Nom</div>
+          <h2>Nom</h2>
         </div>
-        <div>
-          <img src="src/assets/animals/chien.png" alt="chien" />
-          <div>Nom</div>
+        <div className="matched-people2">
+          <img src="src/assets/animals/chien.jpg" alt="chien" />
+          <h2>Nom</h2>
         </div>
       </div>
-      <div>
-        <button type="button">
+      <div className="divBtns">
+        <button className="matchBtns" type="button">
           <img src="src/assets/icons/tchat.png" alt="tchat" />
         </button>
-        <button type="button" onClick={() => setShowChildren(!showChildren)}>
+        <button
+          className="matchBtns"
+          type="button"
+          onClick={() => setShowChildren(!showChildren)}
+        >
           <img src="src/assets/icons/couple.png" alt="couple" />
         </button>
         {showChildren ? <Children /> : ""}
