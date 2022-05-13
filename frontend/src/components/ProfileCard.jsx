@@ -1,38 +1,29 @@
 import React from "react";
-// import chien from "../assets/animals/chien.jpg";
-// import chat from "../assets/animals/chat.jpg";
-// import cheval from "../assets/animals/cheval.jpg";
-// import hibou from "../assets/animals/hibou.jpg";
-// import lapin from "../assets/animals/lapin.jpg";
-// import oiseau from "../assets/animals/oiseau.jpg";
-// import requin from "../assets/animals/requin.jpg";
-
 import empreinte from "../assets/icons/paw.png";
 import malette from "../assets/icons/briefcase.png";
 import livre from "../assets/icons/book.png";
+import "./ProfileCard.css";
 
 function ProfileCard(props) {
   const { name, age, type, profession, biography } = props;
-
+  console.log(type);
   return (
-    <div>
+    <div className="ProfileCardContainer">
+      <div className={`animalpic ${type}`}> </div>
+      <div className="swipe-name">{name}</div>
+      <div className="swipe-age"> {age}</div>
       <div>
-        <img src={`${type}`} alt={type} />
-      </div>
-      <div>{name}</div>
-      <div> {age}</div>
-      <div>
-        <div>
+        <div className="swipe-empreinte">
           <img src={empreinte} alt="empreinte" />
-          {type}
+          <p className="info-swipe">{type}</p>
         </div>
-        <div>
+        <div className="swipe-profession">
           <img src={malette} alt="malette" />
-          {profession}
+          <p className="info-swipe">{profession}</p>
         </div>
-        <div>
+        <div className="swipe-bio">
           <img src={livre} alt="livre" />
-          {biography}
+          <p className="info-swipe">{biography}</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 70vh;
-  width: 95vw;
+  width: 98vw;
   background-color: rgb(231, 87, 99);
   border-radius: 3rem;
 }
@@ -28,7 +28,7 @@ input {
 .Inscription__bio input {
   width: 75vw;
 }
-.Inscription__name  input, .Inscription__age input {
+.Inscription__name  input, .Inscription__age input, .Inscription__Profession input {
   width: 75vw;
 }
 .Inscription__finish {

@@ -1,0 +1,20 @@
+.swipe-heart img {
+  height: 8vh;
+  width: 13vw;
+}
+.swipe-cross img{
+  height: 8vh;
+  width: 13vw;
+}
+.cross-heart {
+  display: flex;
+  justify-content: center;
+
+}
+ button {
+   background-color: transparent;
+   border: none;
+ }
+.ProfileCardContainer {
+  background-color: rgb(231, 87, 99);
+}
