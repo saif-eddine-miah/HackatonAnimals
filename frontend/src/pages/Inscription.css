@@ -7,14 +7,23 @@
   background-color: rgb(231, 87, 99);
   border-radius: 3rem;
 }
+.Inscription__form {
+  display: flex;
+  flex-direction: column;
+}
 
 
-.Inscription__name {
-  height: 13vh;
+.Inscription__name input {
+  height: 5vh;
 }
-.Inscription__age {
-  height: 13vh;
+.Inscription__age input {
+  height: 5vh;
 }
+
+.Inscription__Profession input {
+  height: 5vh;
+}
+
 .Inscription__bio {
   height: 13vh;
   margin-bottom: 3rem;
@@ -35,4 +44,9 @@ input {
   width: 10rem;
   height: 3rem;
   font-size: 1.5rem;
+}
+
+#animalType {
+  height: 5vh;
+  width: 75vw;
 }

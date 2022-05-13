@@ -33,7 +33,7 @@ function Inscription() {
 
   return (
     <div className="Inscription">
-      <form className="Inscription__form" onSubmit={(event) => submit(event)}>
+      <form className="Inscription__form" onSubmit={(event) => submit(event)} onSubmit={submit}>
         <ProfileIcon />
         <select
           name="type"
@@ -60,14 +60,16 @@ function Inscription() {
               placeholder="Denis Chon"
               size="30"
               required
+              value={form.animalName}
+              onChange={handleChange}
             />
           </div>
           <div className="Inscription__age">
             <p>Quel age avez vous ?</p>
             <input
               type="number"
+              id="animalAge"
               className="Inscription__age__input"
-              step="1"
               min="0"
               max="20"
               value={form.animalAge}
@@ -102,11 +104,7 @@ function Inscription() {
           </div>
 
           <Link to={`/swipe/${newId}`}>
-            <button
-              type="button"
-              className="Inscription__finish"
-              onClick={submit}
-            >
+            <button type="submit" className="Inscription__finish">
               Terminer
             </button>
           </Link>
