@@ -12,7 +12,6 @@
   flex-direction: column;
 }
 
-
 .Inscription__name input {
   height: 5vh;
 }
@@ -37,13 +36,17 @@ input {
 .Inscription__bio input {
   width: 75vw;
 }
-.Inscription__name  input, .Inscription__age input, .Inscription__Profession input {
+.Inscription__name input,
+.Inscription__age input,
+.Inscription__Profession input {
   width: 75vw;
 }
 .Inscription__finish {
   width: 10rem;
   height: 3rem;
   font-size: 1.5rem;
+  background-color: aliceblue;
+  border-radius: 2rem;
 }
 
 #animalType {

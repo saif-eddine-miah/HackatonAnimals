@@ -16,11 +16,11 @@ function MatchCard({ user, animalmatch }) {
       <div className="matched-peoples">
         <div className="matched-people1">
           <div className={`animalpic ${user?.animalType}`}> </div>
-          <h2>{user?.animalName}</h2>
+          <h2 className="name">{user?.animalName}</h2>
         </div>
         <div className="matched-people2">
           <div className={`animalpic ${animalmatch?.animalType}`}> </div>
-          <h2>{animalmatch?.animalName}</h2>
+          <h2 className="name">{animalmatch?.animalName}</h2>
         </div>
       </div>
       <div className="divBtns">

@@ -4,7 +4,7 @@ import "./Tchat.css";
 
 function Tchat() {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const [response, setResponse] = useState("...");
 

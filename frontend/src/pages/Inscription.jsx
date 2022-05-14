@@ -33,7 +33,7 @@ function Inscription() {
 
   return (
     <div className="Inscription">
-      <form className="Inscription__form" onSubmit={(event) => submit(event)} onSubmit={submit}>
+      <form className="Inscription__form" onSubmit={(event) => submit(event)}>
         <ProfileIcon />
         <select
           name="type"
@@ -103,11 +103,9 @@ function Inscription() {
             />
           </div>
 
-          <Link to={`/swipe/${newId}`}>
-            <button type="submit" className="Inscription__finish">
-              Terminer
-            </button>
-          </Link>
+          <button type="submit" className="Inscription__finish">
+            Terminer
+          </button>
         </div>
       </form>
     </div>

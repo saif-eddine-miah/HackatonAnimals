@@ -10,7 +10,6 @@ function Swipe() {
   const { id } = useParams();
   const [animals, setAnimals] = useState([]);
   const [match, setMatch] = useState(false);
-
   const [animalNumber, setanimalNumber] = useState(0);
 
   useEffect(() => {

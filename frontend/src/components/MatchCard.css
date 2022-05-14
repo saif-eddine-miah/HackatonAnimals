@@ -13,6 +13,7 @@
   border: transparent;
   box-shadow: 0px 0px 10px 1px;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .arrowBtn {
@@ -26,10 +27,14 @@
 
 .matched-peoples {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
+  background: transparent;
 }
-
+.name {
+  margin: 0.2rem;
+}
 .matched-peoples img {
   width: 40vw;
   height: 30vh;
@@ -50,6 +55,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 0.2rem;
 }
 
 .matchBtns {
@@ -73,37 +79,47 @@
 .chathibou {
   background-image: url("../assets/animals/chat-hibou.jpg");
 }
-.chiencheval {
+.chiencheval,
+.chevalchien {
   background-image: url("../assets/animals/chien-cheval.jpg");
 }
-.chienrequin {
+.chienrequin,
+.requinchien {
   background-image: url("../assets/animals/chien-requin.jpg");
 }
-.chienoiseau {
+.chienoiseau,
+.oiseauchien {
   background-image: url("../assets/animals/chien-oiseau.jpg");
 }
-.chienpingouin {
+.chienpingouin,
+.pingouinchien {
   background-image: url("../assets/animals/pingouin-chien.jpg");
 }
 .chienlapin,
 .lapinchien {
   background-image: url("../assets/animals/lapin-chien.jpg");
 }
-.chienhibou {
+.chienhibou,
+.hibouchien {
   background-image: url("../assets/animals/chien-hibou.jpg");
 }
-.chevaloiseau {
+.chevaloiseau,
+.oiseaucheva {
   background-image: url("../assets/animals/cheval-oiseau.jpg");
 }
-.chatoiseau {
+.chatoiseau,
+.oiseauchat {
   background-image: url("../assets/animals/chat.jpg");
 }
-.oiseaulapin {
+.oiseaulapin,
+.lapinoiseau {
   background-image: url("../assets/animals/chat.jpg");
 }
-.oiseaurequin {
+.oiseaurequin,
+.requinoiseau {
   background-image: url("../assets/animals/chat.jpg");
 }
-.requincheval {
+.requincheval,
+.chevalrequin {
   background-image: url("../assets/animals/chat.jpg");
 }
