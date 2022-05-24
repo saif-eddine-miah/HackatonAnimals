@@ -17,7 +17,7 @@ function Match() {
   const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/animals";
+    const url = `${import.meta.env.VITE_BACKEND_URL}/animals`;
     Axios.get(url).then((response) => setAnimals(response.data));
   }, []);
   // recuper le user avec l'id

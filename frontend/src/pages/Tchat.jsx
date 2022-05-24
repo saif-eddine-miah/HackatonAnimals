@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { Configuration, OpenAIApi } from "openai";
 import "./Tchat.css";
 
 function Tchat() {
-  const configuration = new Configuration({
-    apiKey: "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",
-  });
   const [response, setResponse] = useState("...");
 
   const [question, setQuestion] = useState("");
@@ -14,21 +10,41 @@ function Tchat() {
     setQuestion(event.target.value);
   };
 
-  const openai = new OpenAIApi(configuration);
   async function ask(event) {
     event.preventDefault();
-    const myresponse = await openai.createCompletion("text-davinci-002", {
-      prompt: question,
-      temperature: 0.9,
-      max_tokens: 150,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0.6,
-    });
-    setResponse(myresponse.data.choices[0].text);
-    console.log(myresponse.data.choices[0].text);
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${String(import.meta.env.VITE_API_KEY)}`,
+      },
+      body: JSON.stringify({
+        prompt: question,
+        temperature: 0.9,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 0,
+        presence_penalty: 0.6,
+        stop: ['"""'],
+      }),
+    };
+    fetch(
+      "https://api.openai.com/v1/engines/text-davinci-002/completions",
+      requestOptions
+    )
+      .then((r) => r.json())
+      .then((data) => {
+        if (data) {
+          setResponse(data.choices[0].text);
+          setQuestion("");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
-  console.log(response);
+
   return (
     <div className="Tchat">
       <h1>Chat</h1>

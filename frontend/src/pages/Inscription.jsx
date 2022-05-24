@@ -5,7 +5,7 @@ import ProfileIcon from "../components/ProfileIcon";
 import "./Inscription.css";
 
 function Inscription() {
-  const url = "http://localhost:5000/user";
+  const url = `${import.meta.env.VITE_BACKEND_URL}/user`;
   const [form, setForm] = useState({
     animalName: "",
     animalBio: "",

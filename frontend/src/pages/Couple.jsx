@@ -8,7 +8,7 @@ function Couple() {
       <div>
         <Link to="/Match">
           <button type="button">
-            <img src="src/assets/icons/left-arrow.png" alt="flèche gauche" />{" "}
+            <img src="../assets/icons/left-arrow.png" alt="flèche gauche" />{" "}
             Revenir à votre match
           </button>
         </Link>
